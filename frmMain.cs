@@ -13,7 +13,7 @@ namespace CS_Demo_InputBoxClone
         private void btnExecute_Click(object sender, EventArgs e)
         {
             String myString = string.Empty;
-            if (InputBox.Show("Title", "My Prompt", "", ref myString, null) == DialogResult.OK)
+            if (InputBox.Show("Title", "My Prompt", "[Enter your message]", ref myString, null) == DialogResult.OK)
             {
                 lblResult.Text = myString.Trim();
             }
